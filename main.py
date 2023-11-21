@@ -10,11 +10,19 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 #loading the saved models
-diabetes_model = joblib.load('D:\Multiple_Disease_Prediction\Saved_Models\diabetes_model.joblib')
-diabetes_scaler = joblib.load('D:\Multiple_Disease_Prediction\Saved_Models\diabetes_scaler.joblib')
-parkinsons_model = joblib.load('D:\Multiple_Disease_Prediction\Saved_Models\parkinsons_model.joblib')
-parkinsons_scaler = joblib.load('D:\Multiple_Disease_Prediction\Saved_Models\parkinsons_scaler.joblib')
-heart_model = joblib.load('D:\Multiple_Disease_Prediction\Saved_Models\heart_model.joblib')
+#local
+#diabetes_model = joblib.load('D:\Multiple_Disease_Prediction\diabetes_model.joblib')
+#diabetes_scaler = joblib.load('D:\Multiple_Disease_Prediction\diabetes_scaler.joblib')
+#parkinsons_model = joblib.load('D:\Multiple_Disease_Prediction\parkinsons_model.joblib')
+#parkinsons_scaler = joblib.load('D:\Multiple_Disease_Prediction\parkinsons_scaler.joblib')
+#heart_model = joblib.load('D:\Multiple_Disease_Prediction\heart_model.joblib')
+
+#For Deployment
+diabetes_model = joblib.load('diabetes_model.joblib')
+diabetes_scaler = joblib.load('diabetes_scaler.joblib')
+parkinsons_model = joblib.load('parkinsons_model.joblib')
+parkinsons_scaler = joblib.load('parkinsons_scaler.joblib')
+heart_model = joblib.load('heart_model.joblib')
 
 #sidebar for navigate
 with st.sidebar:
